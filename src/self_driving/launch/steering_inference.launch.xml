@@ -1,0 +1,14 @@
+<launch>
+  <node
+    pkg="self_driving"
+    exec="steering_image"
+    name="steering_image"
+    output="screen">
+    
+    <param name="model_path" value="path/to/ckpt_best.pt"/>
+    <param name="device" value="cpu"/>
+    <param name="linear_vel" value="0.01"/>
+    <param name="flip_sign" value="False"/>
+
+  </node>
+</launch>
